@@ -1,0 +1,34 @@
+﻿@model VSoft.Models.Exame_Historico
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Exame_Historico</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdExame)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdExame)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdHitoricoClinico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdHitoricoClinico)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
